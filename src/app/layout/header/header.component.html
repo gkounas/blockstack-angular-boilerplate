@@ -1,0 +1,8 @@
+<p-menubar>
+    <div *ngIf="authenticated$ | async">
+        <button pButton type="button" icon="pi pi-sign-out"  class="ui-button-danger" (click)="signOut()" label=" Log out ({{userId$ | async}})"></button>
+     </div>     
+</p-menubar>
+
+
+

@@ -1,0 +1,17 @@
+  <ng-container *ngIf=" !(pending$ | async)">
+
+      <p-card>
+          <p-header>
+              Log In
+          </p-header>
+          <p-button label="Sign in using Blockstack" (click)="goToBlockStackSignIn()" icon="pi pi-sign-in" iconPos="left"></p-button>
+      </p-card>
+
+  </ng-container>
+  
+  <ng-container *ngIf="pending$ | async">
+
+      <p-progressSpinner></p-progressSpinner>
+
+  </ng-container>
+
