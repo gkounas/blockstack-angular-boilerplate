@@ -1,6 +1,17 @@
-# Bsangapp
+# Blockstack Hello world Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+
+This project uses [PrimeNG](https://www.primefaces.org/primeng/) UI
+
+This project is based on [Stackarius](https://github.com/cogarius/stackarius)
+
+##Installation
+Run `git clone https://github.com/gkounas/blockstack-angular-boilerplate.git` inside a new folder
+
+Optional run `npm install --global windows-build-tools` before npm install on windows mashine
+
+Run `npm install` inside the same folder
 
 ## Development server
 

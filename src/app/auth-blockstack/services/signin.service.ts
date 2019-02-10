@@ -39,7 +39,7 @@ export class SignInService {
 
     public redirectToSignIn(): Observable<void> {
         const origin = window.location.origin;
-        return of(blockstack.redirectToSignIn(origin + '/login', origin + '/manifest.json', ['store_write', 'publish_data']));
+        return of(blockstack.redirectToSignIn(origin + '/login', origin + '/manifest.json', ['store_write', 'publish_data','email']));
     }
 
     public signOut(): Observable<void> {

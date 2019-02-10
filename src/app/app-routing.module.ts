@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
+
 
 export const routes: Routes = [
     {
         path: '', redirectTo: 'landing', pathMatch: 'full'
     },
     {
-        path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule',
+        path: 'dashboard', component: DashboardComponent
     },
     {
         path: 'landing', component: LandingComponent
@@ -29,9 +32,7 @@ export const routes: Routes = [
                 useHash: false,
                 enableTracing: false,
                 preloadingStrategy: PreloadAllModules
-            } // rem: set tracing to false before going to prod
-            // useHash <-- avoiding HashLocationStrategy, LocationStrategy
-            // enableTracing <-- debugging purposes only
+            }
         )
     ],
     declarations: []

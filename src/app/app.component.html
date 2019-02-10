@@ -1,18 +1,13 @@
-<div class="layout-wrapper">
-      <div class="layout-topbar">
-            <app-header></app-header>
-      </div>
-    <div class="layout-main">
-        <div class="layout-content">
+<div class="layout-wrapper ui-g">
+    <div class="layout-topbar ui-g-12">
+        <app-header></app-header>
+    </div>
+    <div class="layout-main ui-g-12">
             <main>
                 <router-outlet></router-outlet>
             </main>
-      </div>
     </div>
-      <div class="content-section layout-footer clearfix">
-            <span>Blockstack Hello Angular</span>
-            <div class="footer-links">
-                <a href="#">test</a>
-            </div>
-        </div>
+    <div class="layout-footer ui-g-12">
+        <app-footer></app-footer>
+    </div>
 </div>

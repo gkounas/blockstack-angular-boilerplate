@@ -3,18 +3,11 @@ import { AppStartActions, AppStartActionTypes } from './app-start.actions';
 import { AppState } from '.';
 
 export interface AppStartState {
-    started: boolean;
-    contactsFetched: boolean;
-    postsFetched: boolean;
-    notesFetched: boolean;
-
+    started: boolean
 }
 
 export const initialState: AppStartState = {
-    started: false,
-    contactsFetched: false,
-    postsFetched: false,
-    notesFetched: false,
+    started: false
 };
 
 export function reducer(state = initialState, action: AppStartActions): AppStartState {
@@ -25,15 +18,6 @@ export function reducer(state = initialState, action: AppStartActions): AppStart
                 ...state,
                 started: true,
             };
-
-        case AppStartActionTypes.DataWasFetchedType:
-            return {
-                ...state,
-                contactsFetched: state.contactsFetched || action.payload.contacts,
-                postsFetched: state.postsFetched || action.payload.posts,
-                notesFetched: state.notesFetched || action.payload.notes,
-            };
-
 
         default:
             return state;

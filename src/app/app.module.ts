@@ -15,8 +15,10 @@ import { RoutingEffects } from './store/navigation';
 import { AppRoutingModule } from './app-routing.module';
 
 import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 import {ButtonModule} from 'primeng/button';
 import {MenubarModule} from 'primeng/menubar';
@@ -29,7 +31,9 @@ import {ProgressSpinnerModule} from 'primeng/progressspinner';
     AppComponent,
     LoginComponent,
     HeaderComponent,
-    LandingComponent
+    FooterComponent,
+    LandingComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
