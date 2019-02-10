@@ -6,7 +6,7 @@ This project uses [PrimeNG](https://www.primefaces.org/primeng/) UI
 
 This project is based on [Stackarius](https://github.com/cogarius/stackarius)
 
-##Installation
+## Installation
 Run `git clone https://github.com/gkounas/blockstack-angular-boilerplate.git` inside a new folder
 
 Optional run `npm install --global windows-build-tools` before npm install on windows mashine
